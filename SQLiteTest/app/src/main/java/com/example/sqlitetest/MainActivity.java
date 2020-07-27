@@ -70,13 +70,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         }
         if(view.getId() == R.id.btn_update){
-
+            ll.removeAllViews();
+            user_list.clear();
             update();
+            query();
 
         }
         if(view.getId() == R.id.btn_delete){
-
+            ll.removeAllViews();
+            user_list.clear();
             delete();
+            query();
 
         }
     }
